@@ -60,8 +60,8 @@ export default function SearchModal() {
         </button>
       </DialogTrigger>
       <DialogContent
-        className="border-0 shadow-2xl bg-white p-2.5 rounded-2xl gap-2 fixed top-[20%] left-[50%] translate-x-[-50%] translate-y-0"
-        style={MODAL_STYLES}
+        className="border-0 shadow-2xl bg-white p-2.5 rounded-2xl gap-2 fixed top-[20%] left-[50%] translate-x-[-50%] translate-y-0 w-[95%] md:w-auto"
+        style={window.innerWidth >= 768 ? MODAL_STYLES : { maxWidth: '95vw' }}
         showCloseButton={false}
       >
         <SearchInput
